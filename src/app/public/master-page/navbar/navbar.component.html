@@ -1,0 +1,58 @@
+<!--<nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+  </ul> -->
+
+  <nav>
+    <div class="nav-wrapper blue">
+     <a routerLink="/home" class="brand-logo">Hotel</a>
+      <a href="#" data-target="mobile-hotel" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a routerLink="/security/login">login</a></li>
+        <li><a routerLink="/security/logout">logout</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-hotel">
+    <li><a routerLink="/security/login">login</a></li>
+    <li><a routerLink="/security/logout">logout</a></li>
+  </ul>
+
+
+<!--<nav>
+    <strong *ngIf="userLogged">{{userName}}</strong>
+    <div class="nav-wrapper blue">
+        <a routerLink="/home" class="brand-logo">Hotel</a>
+        <a href="#" data-target="mobile-hotel" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li *ngIf="!userLogged"><a routerLink="/security/login">Login</a></li>
+            <li *ngIf="userLogged"><a routerLink="/security/logout">Logout</a></li>
+            <li *ngIf="userLogged"><a routerLink="/country/list">Country</a></li>
+            <li *ngIf="userLogged"><a routerLink="/city/list">City</a></li>
+            <li *ngIf="userLogged"><a routerLink="/hotel/list">Hotel</a></li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-hotel">
+    <li><a *ngIf="!userLogged" routerLink="/security/login">Login</a></li>
+    <li><a *ngIf="userLogged" routerLink="/security/logout">Logout</a></li>
+</ul>
+-->
