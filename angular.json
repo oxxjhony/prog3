@@ -28,7 +28,9 @@
               "node_modules/materialize-css/dist/css/materialize.css"
             ],
             "scripts": [
-              "node_modules/materialize-css/dist/js/materialize.js"
+              "node_modules/materialize-css/dist/js/materialize.js",
+              
+              "src/assets/Js/initComponents.js"
             ]
           },
           "configurations": {
@@ -94,7 +96,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/Js/initComponents.js"
+              
+            ]
           }
         },
         "lint": {

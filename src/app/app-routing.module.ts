@@ -16,6 +16,10 @@ const routes: Routes = [
   redirectTo:'/home'
 },
 {
+  path:'security',
+  loadChildren:'./modules/security/security.module#SecurityModule'
+},
+{
   path:'**',
   component:PageNotFoundComponent
 }

@@ -18,22 +18,31 @@
     <li><a href="mobile.html">Mobile</a></li>
   </ul> -->
 
-  <nav>
-    <div class="nav-wrapper blue">
+  <nav class ="navbar change()" id="nuv">
+    <strong *ngIf="userLogged"> 
+      {{userName}}
+    </strong>
+    <div class="nav-wrapper">
      <a routerLink="/home" class="brand-logo">Hotel</a>
       <a href="#" data-target="mobile-hotel" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a routerLink="/security/login">login</a></li>
-        <li><a routerLink="/security/logout">logout</a></li>
+        <li *ngIf="!userLogged"><a routerLink="/security/login">login</a></li>
+        <li *ngIf="userLogged"><a routerLink="/security/logout">logout</a></li>
+        <li *ngIf="userLogged"><a routerLink="/security/logout">mis solicitudes</a></li>
+        <li *ngIf="userLogged"><a routerLink="/security/logout">mi cuenta</a></li>
         
       </ul>
     </div>
   </nav>
 
   <ul class="sidenav" id="mobile-hotel">
-    <li><a routerLink="/security/login">login</a></li>
-    <li><a routerLink="/security/logout">logout</a></li>
+    <li *ngIf="!userLogged"><a routerLink="/security/login">login</a></li>
+    <li *ngIf="userLogged"><a routerLink="/security/logout">logout</a></li>
+    <li *ngIf="userLogged"><a routerLink="/security/logout">mis solicitudes</a></li>
+    <li *ngIf="userLogged"><a routerLink="/security/logout">mi cuenta</a></li>
   </ul>
+  
+  
 
 
 <!--<nav>

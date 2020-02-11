@@ -1,0 +1,30 @@
+.transparentBG {
+    background-color: rgba(0,0,0,0);
+  }
+  
+  
+  .navbar-fixed {position: absolute;z-index:999999999;}
+
+  .nav {
+    position :fixed;
+    background: rgba(0,0,0,0);
+    padding :0px 20px;
+
+   }
+
+   .navbar {
+    width: 100%;
+    padding: 5px;
+    position: fixed;
+    background: rgba(0,0,0,0);
+    top: 0px;
+    text-align: center;
+    transition: .5s;
+    z-index: 999;
+  }
+  
+ 
+
+  
+
+   
